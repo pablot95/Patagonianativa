@@ -902,6 +902,10 @@ section {
         flex-direction: column;
         gap: 1.5rem;
     }
+    .logo-img{
+        width: 120px;
+        height: 120px;
+    }
     
     .nav-toggle {
         display: flex;
