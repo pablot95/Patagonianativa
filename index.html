@@ -7,23 +7,22 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Crimson+Text:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Header Navigation -->
     <header class="header" id="header">
-        <nav class="nav container">
-            <div class="nav-logo">
-                <img src="images/logo.png" alt="Patagonia Nativa Logo" class="logo-img">
+        <nav class="nav">
+            <div class="nav-brand">
+                <a href="#inicio">PATAGONIA NATIVA</a>
             </div>
             <div class="nav-menu" id="nav-menu">
                 <ul class="nav-list">
-                    <li class="nav-item"><a href="#inicio" class="nav-link">Inicio</a></li>
-                    <li class="nav-item"><a href="#identidad" class="nav-link">Nuestra Identidad</a></li>
-                    <li class="nav-item"><a href="#fibra" class="nav-link">Fibra de Excelencia</a></li>
-                    <li class="nav-item"><a href="#turismo" class="nav-link">Turismo</a></li>
-                    <li class="nav-item"><a href="#investigacion" class="nav-link">Investigación</a></li>
-                    <li class="nav-item"><a href="#valores" class="nav-link">Valores</a></li>
+                    <li class="nav-item"><a href="#identidad" class="nav-link">IDENTIDAD</a></li>
+                    <li class="nav-item"><a href="#fibra" class="nav-link">FIBRA</a></li>
+                    <li class="nav-item"><a href="#turismo" class="nav-link">VISITAR</a></li>
+                    <li class="nav-item"><a href="#valores" class="nav-link">VALORES</a></li>
+                    <li class="nav-item"><a href="#contacto" class="nav-link">CONTACTO</a></li>
                 </ul>
             </div>
             <div class="nav-toggle" id="nav-toggle">
@@ -36,175 +35,145 @@
 
     <!-- Hero Section -->
     <section class="hero" id="inicio">
-        <div class="hero-overlay"></div>
-        <div class="hero-content container">
-            <h1 class="hero-title animate-fade-in">Patagonia Nativa</h1>
-            <p class="hero-subtitle animate-fade-in-delay">Donde la tradición ancestral se encuentra con la sustentabilidad moderna</p>
-            <div class="hero-description animate-fade-in-delay-2">
-                <p>Producción de fibra de lujo con conservación del ecosistema y bienestar animal absoluto</p>
-            </div>
-            <a href="#identidad" class="btn-primary animate-fade-in-delay-3">Conoce Nuestra Historia</a>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1920&q=80" alt="Patagonia">
         </div>
-        <div class="hero-scroll">
-            <span>Desliza</span>
-            <div class="scroll-arrow"></div>
+        <div class="hero-content">
+            <h5 class="hero-tag">PATAGONIA SILVESTRE</h5>
+            <p class="hero-text">Donde la tradición ancestral se encuentra con<br>la sustentabilidad moderna</p>
+            <h1 class="hero-title">UN CAMINO<br>EN LA NATURALEZA</h1>
+        </div>
+    </section>
+
+    <!-- Intro Section -->
+    <section class="intro-section">
+        <div class="intro-container">
+            <p class="intro-text">
+                Patagonia Nativa nace de la experiencia de productores agropecuarios<br>
+                que transformaron la relación con el recurso más emblemático:<br>
+                <strong>el guanaco silvestre de Santa Cruz.</strong>
+            </p>
         </div>
     </section>
 
     <!-- Identidad Section -->
-    <section class="section-identidad" id="identidad">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Nuestra Esencia</span>
-                <h2 class="section-title">Identidad y Origen</h2>
-            </div>
-            <div class="identidad-grid">
-                <div class="identidad-content">
-                    <div class="card-elegant">
-                        <h3 class="card-title">Nuestro Origen</h3>
-                        <p class="card-text">
-                            Patagonia Nativa nace de la experiencia de productores agropecuarios de Santa Cruz que, tras años de manejo tradicional ovino y bovino, decidieron transformar la relación con el recurso más emblemático de la región: el guanaco.
-                        </p>
-                        <p class="card-text">
-                            Inspirados por las prácticas ancestrales de Perú y Bolivia, implementamos la <strong>trashumancia</strong>: un sistema de desplazamiento estacional y planificado que respeta los ritmos biológicos del animal y la regeneración del suelo.
-                        </p>
-                    </div>
-                </div>
-                <div class="identidad-image">
-                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80" alt="Paisaje Patagónico" class="img-parallax">
-                </div>
-            </div>
-            <div class="mission-box">
-                <div class="mission-icon">🌱</div>
-                <h3 class="mission-title">Nuestra Misión</h3>
-                <p class="mission-text">
-                    Integrar la producción de fibra de lujo con la conservación del ecosistema y el bienestar animal absoluto, transformando la visión tradicional de la ganadería patagónica.
+    <section class="split-section" id="identidad">
+        <div class="split-image">
+            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80" alt="Patagonia">
+        </div>
+        <div class="split-content">
+            <div class="split-inner">
+                <h5 class="section-subtitle">NUESTRA IDENTIDAD</h5>
+                <h2 class="section-heading">FIBRA<br>ANCESTRAL</h2>
+                <p class="section-text">
+                    Inspirados por las prácticas ancestrales de Perú y Bolivia, implementamos la trashumancia: un sistema de desplazamiento estacional que respeta los ritmos biológicos del animal y la regeneración del suelo.
                 </p>
+                <a href="#fibra" class="btn-link">DESCUBRIR MÁS</a>
             </div>
         </div>
     </section>
 
     <!-- Fibra Section -->
-    <section class="section-fibra" id="fibra">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Excelencia Sustentable</span>
-                <h2 class="section-title">Fibra de Lujo Patagónica</h2>
-                <p class="section-description">
-                    Posicionamos la fibra de guanaco como un producto identitario de la Patagonia en el mercado textil de alta gama
+    <section class="split-section reverse" id="fibra">
+        <div class="split-content">
+            <div class="split-inner">
+                <h5 class="section-subtitle">EXCELENCIA SUSTENTABLE</h5>
+                <h2 class="section-heading">FIBRA<br>DE LUJO</h2>
+                <p class="section-text">
+                    Con registros de finura de hasta 13 micras, nuestra fibra compite con la vicuña en suavidad y capacidad térmica. Un recurso identitario de la Patagonia en el mercado textil de alta gama.
                 </p>
-            </div>
-            <div class="fibra-cards">
-                <div class="feature-card card-shine">
-                    <div class="feature-icon">✨</div>
-                    <h3 class="feature-title">Calidad Certificada</h3>
-                    <p class="feature-text">
-                        Con registros de finura de hasta <strong>13 micras</strong>, nuestra fibra compite con la vicuña en suavidad y capacidad térmica.
-                    </p>
-                </div>
-                <div class="feature-card card-shine">
-                    <div class="feature-icon">🌿</div>
-                    <h3 class="feature-title">Manejo Ético</h3>
-                    <p class="feature-text">
-                        Producimos sin recurrir al cautiverio intensivo, utilizando pastoreo rotativo en grandes superficies.
-                    </p>
-                </div>
-                <div class="feature-card card-shine">
-                    <div class="feature-icon">🔍</div>
-                    <h3 class="feature-title">Trazabilidad</h3>
-                    <p class="feature-text">
-                        Garantizamos un recurso obtenido bajo estrictos estándares de bienestar, sin desatender la producción ganadera existente.
-                    </p>
+                <div class="feature-list">
+                    <div class="feature-item">
+                        <h4>Calidad Certificada</h4>
+                        <p>Fibra de hasta 13 micras de finura</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>Manejo Ético</h4>
+                        <p>Sin cautiverio intensivo</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>Trazabilidad</h4>
+                        <p>Estándares de bienestar absolutos</p>
+                    </div>
                 </div>
             </div>
-            <div class="fibra-showcase">
-                <img src="images/guanacos.jpg" alt="Guanacos en la Patagonia" class="showcase-image">
-                <div class="showcase-overlay">
-                    <p class="showcase-text">La fibra más fina de la Patagonia</p>
-                </div>
-            </div>
+        </div>
+        <div class="split-image">
+            <img src="images/guanacos.jpg" alt="Guanacos">
+        </div>
+    </section>
+
+    <!-- Full Image Section -->
+    <section class="full-image-section">
+        <div class="full-image-wrapper">
+            <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=1920&q=80" alt="Naturaleza Patagónica">
         </div>
     </section>
 
     <!-- Turismo Section -->
-    <section class="section-turismo" id="turismo">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Experiencia Única</span>
-                <h2 class="section-title">Turismo Responsable</h2>
-                <p class="section-description">
-                    Nuestra propuesta turística rompe con el modelo extractivo. En el establecimiento no se realizan faenas, centrando la experiencia en el respeto al animal vivo.
-                </p>
-            </div>
-            <div class="turismo-grid">
-                <div class="turismo-card">
-                    <div class="turismo-image">
-                        <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=600&q=80" alt="Caminatas en naturaleza">
-                    </div>
-                    <div class="turismo-content">
-                        <h3 class="turismo-title">Actividades</h3>
-                        <ul class="turismo-list">
-                            <li>🥾 Caminatas interpretativas</li>
-                            <li>👁️ Observación del manejo de trashumancia</li>
-                            <li>📚 Visitas educativas</li>
-                        </ul>
-                    </div>
+    <section class="text-center-section" id="turismo">
+        <div class="text-center-content">
+            <h5 class="section-subtitle">EXPERIENCIA ÚNICA</h5>
+            <h2 class="section-heading">VISITAR</h2>
+            <p class="center-text">
+                Nuestra propuesta turística rompe con el modelo extractivo.<br>
+                Centramos la experiencia en el respeto al animal vivo.<br>
+                <strong>Resignificamos al guanaco como patrimonio cultural y natural.</strong>
+            </p>
+        </div>
+    </section>
+
+    <!-- Activities Grid -->
+    <section class="activities-section">
+        <div class="activities-grid">
+            <div class="activity-card">
+                <div class="activity-image">
+                    <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=800&q=80" alt="Caminatas">
                 </div>
-                <div class="turismo-card">
-                    <div class="turismo-image">
-                        <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=600&q=80" alt="Voluntariado">
-                    </div>
-                    <div class="turismo-content">
-                        <h3 class="turismo-title">Voluntariado</h3>
-                        <p class="turismo-text">
-                            Espacios para quienes deseen involucrarse activamente en un modelo de producción consciente y vivir la experiencia patagónica desde adentro.
-                        </p>
-                    </div>
+                <div class="activity-content">
+                    <h3>CAMINATAS<br>INTERPRETATIVAS</h3>
+                    <p>Observación del manejo de trashumancia y visitas educativas</p>
                 </div>
             </div>
-            <div class="objetivo-banner">
-                <div class="objetivo-content">
-                    <h3 class="objetivo-title">Nuestro Objetivo</h3>
-                    <p class="objetivo-text">
-                        Cambiar la mirada del visitante, resignificando al guanaco como patrimonio cultural y natural vivo
-                    </p>
+            <div class="activity-card">
+                <div class="activity-image">
+                    <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&q=80" alt="Voluntariado">
+                </div>
+                <div class="activity-content">
+                    <h3>VOLUNTARIADO</h3>
+                    <p>Involúcrate activamente en un modelo de producción consciente</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Investigación Section -->
-    <section class="section-investigacion" id="investigacion">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Conocimiento Científico</span>
-                <h2 class="section-title">Investigación y Alianzas</h2>
-                <p class="section-description">
-                    Un laboratorio a cielo abierto consolidado como nodo de conocimiento para el estudio sostenido de la especie
+    <!-- Research Section -->
+    <section class="split-section" id="investigacion">
+        <div class="split-image">
+            <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=1200&q=80" alt="Investigación">
+        </div>
+        <div class="split-content">
+            <div class="split-inner">
+                <h5 class="section-subtitle">CONOCIMIENTO CIENTÍFICO</h5>
+                <h2 class="section-heading">INVESTIGACIÓN<br>Y ALIANZAS</h2>
+                <p class="section-text">
+                    Un laboratorio a cielo abierto consolidado como nodo de conocimiento para el estudio sostenido de la especie.
                 </p>
-            </div>
-            <div class="investigacion-content">
-                <div class="investigacion-main">
-                    <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=800&q=80" alt="Investigación científica" class="investigacion-img">
-                </div>
-                <div class="investigacion-info">
-                    <div class="info-block">
-                        <h3 class="info-title">🔬 Ciencia y Academia</h3>
-                        <p class="info-text">
-                            Trabajamos en articulación con la Dirección de Fauna de Santa Cruz, el Consejo Agrario Provincial y la UNPA.
-                        </p>
+                <div class="feature-list">
+                    <div class="feature-item">
+                        <h4>Ciencia y Academia</h4>
+                        <p>Articulación con Dirección de Fauna, Consejo Agrario y UNPA</p>
                     </div>
-                    <div class="info-block">
-                        <h3 class="info-title">📊 Líneas de Estudio</h3>
-                        <p class="info-text">
-                            Ofrecemos condiciones óptimas para estadísticas sobre finura de fibra, evaluación de pastizales y comportamiento animal.
-                        </p>
+                    <div class="feature-item">
+                        <h4>Líneas de Estudio</h4>
+                        <p>Finura de fibra, pastizales y comportamiento animal
+                    <div class="feature-item">
+                        <h4>Líneas de Estudio</h4>
+                        <p>Finura de fibra, pastizales y comportamiento animal</p>
                     </div>
-                    <div class="info-block">
-                        <h3 class="info-title">🎓 Vinculación Educativa</h3>
-                        <p class="info-text">
-                            Colaboramos estrechamente con la Escuela Agropecuaria de Gobernador Gregores para fomentar el arraigo territorial y la transferencia de conocimientos.
-                        </p>
+                    <div class="feature-item">
+                        <h4>Vinculación Educativa</h4>
+                        <p>Transferencia de conocimientos y arraigo territorial</p>
                     </div>
                 </div>
             </div>
@@ -212,79 +181,58 @@
     </section>
 
     <!-- Valores Section -->
-    <section class="section-valores" id="valores">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Nuestros Principios</span>
-                <h2 class="section-title">Valores y Objetivos</h2>
+    <section class="text-center-section dark" id="valores">
+        <div class="text-center-content">
+            <h5 class="section-subtitle">NUESTROS PRINCIPIOS</h5>
+            <h2 class="section-heading">VALORES</h2>
+        </div>
+        <div class="values-grid">
+            <div class="value-item">
+                <h3>SUSTENTABILIDAD</h3>
+                <p>Conservación del suelo y aprovechamiento equilibrado</p>
             </div>
-            <div class="valores-grid">
-                <div class="valor-card">
-                    <div class="valor-icon-wrapper">
-                        <div class="valor-icon">🌍</div>
-                    </div>
-                    <h3 class="valor-title">Sustentabilidad</h3>
-                    <p class="valor-text">
-                        Conservación del suelo y aprovechamiento equilibrado del territorio
-                    </p>
-                </div>
-                <div class="valor-card">
-                    <div class="valor-icon-wrapper">
-                        <div class="valor-icon">❤️</div>
-                    </div>
-                    <h3 class="valor-title">Bienestar Animal</h3>
-                    <p class="valor-text">
-                        Eliminación del estrés por confinamiento mediante la trashumancia
-                    </p>
-                </div>
-                <div class="valor-card">
-                    <div class="valor-icon-wrapper">
-                        <div class="valor-icon">🏔️</div>
-                    </div>
-                    <h3 class="valor-title">Identidad Regional</h3>
-                    <p class="valor-text">
-                        Revalorización del guanaco como símbolo de Santa Cruz
-                    </p>
-                </div>
-                <div class="valor-card">
-                    <div class="valor-icon-wrapper">
-                        <div class="valor-icon">💡</div>
-                    </div>
-                    <h3 class="valor-title">Innovación</h3>
-                    <p class="valor-text">
-                        Evolución del manejo ganadero tradicional hacia un modelo sostenible y ético
-                    </p>
-                </div>
+            <div class="value-item">
+                <h3>BIENESTAR ANIMAL</h3>
+                <p>Trashumancia sin confinamiento</p>
             </div>
+            <div class="value-item">
+                <h3>IDENTIDAD REGIONAL</h3>
+                <p>Revalorización del guanaco patagónico</p>
+            </div>
+            <div class="value-item">
+                <h3>INNOVACIÓN</h3>
+                <p>Modelo sostenible y ético</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="text-center-section" id="contacto">
+        <div class="text-center-content">
+            <h5 class="section-subtitle">CONECTA CON NOSOTROS</h5>
+            <h2 class="section-heading">CONTACTO</h2>
+            <p class="center-text">
+                Santa Cruz, Patagonia Argentina<br>
+                <strong>info@patagonianativa.com</strong>
+            </p>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <img src="images/logo.png" alt="Patagonia Nativa Logo" class="footer-logo-img">
-                    <h3>Patagonia Nativa</h3>
-                    <p>Fibra sustentable, futuro responsable</p>
-                </div>
-                <div class="footer-links">
-                    <h4>Enlaces</h4>
-                    <ul>
-                        <li><a href="#inicio">Inicio</a></li>
-                        <li><a href="#identidad">Identidad</a></li>
-                        <li><a href="#fibra">Fibra</a></li>
-                        <li><a href="#turismo">Turismo</a></li>
-                    </ul>
-                </div>
-                <div class="footer-contact">
-                    <h4>Contacto</h4>
-                    <p>Santa Cruz, Patagonia Argentina</p>
-                    <p>info@patagonianativa.com</p>
-                </div>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3>PATAGONIA NATIVA</h3>
+                <p>Fibra sustentable, futuro responsable</p>
+            </div>
+            <div class="footer-links">
+                <a href="#identidad">IDENTIDAD</a>
+                <a href="#fibra">FIBRA</a>
+                <a href="#turismo">VISITAR</a>
+                <a href="#valores">VALORES</a>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Patagonia Nativa. Todos los derechos reservados.</p>
+                <p>© 2026 PATAGONIA NATIVA</p>
             </div>
         </div>
     </footer>

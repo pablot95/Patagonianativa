@@ -36,6 +36,38 @@ navLinks.forEach(link => {
     });
 });
 
+// =================== INTERSECTION OBSERVER FOR ANIMATIONS =================== 
+const observerOptions = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.1
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            // Opcional: dejar de observar después de que se anima
+            // observer.unobserve(entry.target);
+        }
+    });
+}, observerOptions);
+
+// Elementos a observar para animaciones
+const animatedElements = document.querySelectorAll(`
+    .intro-text,
+    .split-image,
+    .split-inner,
+    .text-center-content,
+    .value-item,
+    .activity-card,
+    .full-image-wrapper
+`);
+
+animatedElements.forEach(el => {
+    observer.observe(el);
+});
+
 // =================== SCROLL EFFECTS =================== 
 window.addEventListener('scroll', () => {
     // Header background on scroll
@@ -78,41 +110,6 @@ function activeSection() {
 }
 
 window.addEventListener('scroll', activeSection);
-
-// =================== INTERSECTION OBSERVER FOR ANIMATIONS =================== 
-const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -100px 0px'
-};
-
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.style.opacity = '1';
-            entry.target.style.transform = 'translateY(0)';
-        }
-    });
-}, observerOptions);
-
-// Observe all cards and sections
-document.addEventListener('DOMContentLoaded', () => {
-    const animatedElements = document.querySelectorAll(`
-        .card-elegant,
-        .feature-card,
-        .turismo-card,
-        .info-block,
-        .valor-card,
-        .mission-box,
-        .objetivo-banner
-    `);
-    
-    animatedElements.forEach(el => {
-        el.style.opacity = '0';
-        el.style.transform = 'translateY(50px)';
-        el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-        observer.observe(el);
-    });
-});
 
 // =================== SMOOTH SCROLL ENHANCEMENT =================== 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
