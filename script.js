@@ -77,6 +77,22 @@ window.addEventListener('scroll', () => {
         header.classList.remove('scrolled');
     }
     
+    // Parallax effect for full-image-wrapper
+    const fullImageWrappers = document.querySelectorAll('.full-image-wrapper');
+    fullImageWrappers.forEach(wrapper => {
+        const section = wrapper.closest('.full-image-section');
+        const rect = section.getBoundingClientRect();
+        
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+            const scrolled = window.pageYOffset;
+            const sectionTop = section.offsetTop;
+            const offset = scrolled - sectionTop;
+            const parallaxSpeed = 0.3;
+            
+            wrapper.style.transform = `translate3d(0, ${offset * parallaxSpeed}px, 0)`;
+        }
+    });
+    
     // Parallax effect for images
     const parallaxElements = document.querySelectorAll('.img-parallax');
     parallaxElements.forEach(el => {
