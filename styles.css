@@ -637,12 +637,36 @@ img {
 .footer-bottom {
     padding-top: 3rem;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .footer-bottom p {
     font-size: 0.7rem;
     color: #666;
     letter-spacing: 1px;
+}
+
+.footer-signature {
+    font-size: 0.65rem;
+    color: #444;
+    letter-spacing: 1px;
+    font-weight: 300;
+    transition: color 0.3s ease;
+}
+
+.footer-signature a {
+    color: #666;
+    text-decoration: none;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+.footer-signature a:hover {
+    color: #ffffff;
 }
 
 /* =================== RESPONSIVE =================== */
